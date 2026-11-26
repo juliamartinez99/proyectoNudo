@@ -1,0 +1,133 @@
+:root{
+    --color-fondo: #FFF5EB;
+    --color-principal: #523235;
+    --color-secundario:#deb887;
+    --color-secudario2:#b26915;
+    --color-texto: hsl(350, 67%, 4%);
+    --fuente-principal: 'Fraunces', serif;
+    --color-sombra: rgba(82, 50, 53, 0.2);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* estilos genericos */
+body{
+    background-color: var(--color-fondo);
+    font-family: var(--fuente-principal);
+}
+main{
+    width: 80%;
+    margin: 0 auto;
+}
+input[type="submit"]:hover{
+    box-shadow: 4px 3px 10px 8px rgba(0, 0, 0, 0.52);
+    transition: box-shadow 0.6s ease;
+}
+
+input:not([type="submit"]), textarea{
+    border-radius: 20px;
+    padding: 10px;
+    background-color: var(--color-fondo);
+    border: none; /*quito el estilo por defecto*/
+    text-transform: capitalize;
+    resize: none; /*para que no pueda cambiar las medidas*/
+    /* para que se pueda encoger cuadno se pone la pantalla pequeña */
+    min-width: 0;
+    width: 100%;
+}
+input:focus, textarea:focus{
+    outline: none; /*quitamos la linea interior que se pone por defecto*/
+    box-shadow: inset 0px 0px 10px 10px rgba(222,184,135,0.52);
+}
+
+/* estilo para el titulo principal */
+.title{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* disposicion grid para los dos bloques principales */
+.main-content-form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+/* clase que contiene a los dos bloques */
+.style-section{
+    background-color: var(--color-secundario);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 500px; /*ponemos un ancho fijo*/
+    box-shadow: 4px 3px 39px 8px rgba(222,184,135,0.52);
+}
+
+/* estilos al formulario de contacto */
+.contact-form{
+    padding: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2,1fr);
+}
+.contact-form h3{
+    grid-column: 1 / span 2;
+    justify-self: center;
+}
+.contact-form input[name="email"]{
+    grid-column: 1 / span 2;
+}
+.contact-form textarea{
+    grid-column: 1 / span 2;
+    height: 150px;
+}
+.contact-form input[type="submit"]{
+    grid-column: 1 / span 2;
+    justify-self: center;
+    background-color: var(--color-secudario2);
+    padding: 2% 10%;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+}
+/* estilos para la parte de informacion de contacto */
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+/* estilos cuando se pone el foco por teclado */
+.contact-info a:focus{
+    border-radius: 20px;
+    /* esto es la linea exterior que se crea con el teclado */
+    outline-offset: 9px;
+    outline: 2px solid var(--color-principal)
+}
+/* estilo cuando se pasa el raton */
+.contact-info a:hover{
+    font-size:larger;
+}
+.contact-info a{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: min(280px, 100%);
+    text-decoration: none;
+    color: var(--color-texto);
+    font-size: 20px;
+}
+.contact-info svg{
+    font-size: 28px;
+    width: 35px;
+    text-align: center;
+}
+ .contact-form label{
+    position: absolute;
+ }

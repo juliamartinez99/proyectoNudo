@@ -1,0 +1,17 @@
+INSERT INTO producto (titulo, descripcion, img, precio, categoria) VALUES
+('BOLSO CLASIC',      'Bolso de diseño clásico y atemporal, ideal para el día a día y para combinar con cualquier look.', 'img/productos/producto1.jpg',  45.00, 'bolsos'),
+('BOLSO CACAO',       'Bolso en tono cacao, cálido y elegante, perfecto para looks otoñales y naturales.',                'img/productos/producto2.jpg',  45.00, 'bolsos'),
+('BOLSO BAMBÚ',       'Bolso con inspiración natural y acabado artesanal que recuerda al bambú.',                          'img/productos/producto3.jpg',  45.00, 'bolsos'),
+('BOLSO LUNA',        'Bolso de líneas suaves y aire misterioso, inspirado en la luna.',                                   'img/productos/producto4.jpg',  45.00, 'bolsos'),
+('BOLSO ARENA',       'Bolso en tono arena, neutro y versátil, ideal para cualquier ocasión.',                             'img/productos/producto5.jpg',  45.00, 'bolsos'),
+('BOLSO ROSA MALLA',  'Bolso en rosa con detalle de malla, un toque fresco y femenino para tus outfits.',                  'img/productos/producto6.jpg',  45.00, 'bolsos'),
+('BOLSO BRISA',       'Bolso ligero y fresco, pensado para los días de primavera y verano.',                               'img/productos/producto7.jpg',  45.00, 'bolsos'),
+('BOLSO NOCHE',       'Bolso en tonos oscuros, elegante y sofisticado para tus planes de noche.',                          'img/productos/producto8.jpg',  45.00, 'bolsos'),
+('BOLSO FLECOS BOHO', 'Bolso de estilo boho con flecos, perfecto para un look desenfadado y con personalidad.',            'img/productos/producto9.jpg',  45.00, 'bolsos'),
+('BOLSO GEOMETRÍA',   'Bolso con diseño de formas geométricas, moderno y con carácter.',                                   'img/productos/producto10.jpg', 45.00, 'bolsos'),
+('BOLSO PLATA',       'Bolso con acabado plateado que aporta un toque brillante y actual a cualquier conjunto.',           'img/productos/producto11.jpg', 45.00, 'bolsos'),
+('BOLSO NUDO OSCURO', 'Bolso oscuro con detalle de nudo, sofisticado y fácil de combinar.',                                'img/productos/producto12.jpg', 45.00, 'bolsos'),
+('BOLSO PERLA',       'Bolso en tono perlado, delicado y elegante, ideal para ocasiones especiales.',                      'img/productos/producto13.jpg', 45.00, 'bolsos'),
+('BOLSO BLUSH',       'Bolso en suave tono rosado blush, romántico y muy versátil.',                                       'img/productos/producto14.jpg', 45.00, 'bolsos'),
+('BOLSO TOTE TIERRA', 'Bolso tote espacioso en tonos tierra, práctico y cómodo para el día a día.',                        'img/productos/producto15.jpg', 45.00, 'bolsos'),
+('BOLSO GEOMETRÍA',   'Bolso con diseño geométrico y líneas marcadas, una variante moderna de nuestra colección.',         'img/productos/producto16.jpg', 45.00, 'bolsos');

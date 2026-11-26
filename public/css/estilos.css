@@ -1,0 +1,187 @@
+:root{
+    --color-fondo: #FFF5EB;
+    --color-principal: #523235;
+    --color-texto: hsl(350, 67%, 4%);
+    --color-secundario: #fff5eb;
+    --fuente-principal: 'Fraunces', serif;
+    --color-sombra: rgba(82, 50, 53, 0.2);
+}
+/* Reseteo inicial */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fuente-principal);
+}
+/* añadimos estilos principales para todo el documento */
+body{
+    background-color: var(--color-fondo);
+}
+/* Estilos para todos los enlaces */
+a{
+    text-decoration: none;
+    color:var(--color-fondo);
+}
+/* estilos al h3 añadiendo la fuente principal por defecto y el tamaño por defecto */
+h3{
+    font-family: var(--fuente-principal);
+    font-size: 20px;
+}
+/* le damos un poco de tamaño al main para que se vea separacioin con el nav */
+.main-content{
+    width: 100%;
+    height: 1500px;
+}
+/* estilos a la barra principal que contiene el menu de navegacion y los iconos de comprar */
+.main-navigation{
+    background-color: var(--color-principal);
+    border-radius: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    /* position: fixed; */
+    position: sticky;
+    z-index: 100; /*le damos prioridad al menu de navegacion*/
+    top: 10px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+/* Estilos del menu de navegacion */
+.nav-menu{
+    flex-grow: 6; /* le decimos que crezca este elemento mas que su hermano */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap; /**para que no se salga de la pantalla*/
+    text-transform: uppercase;
+}
+.nav-menu a:not(:nth-child(4)){
+    padding: 20px
+}
+.nav-menu a:hover:not(:nth-child(4)), nav a.activo{
+    /* background-color: var(--color-fondo); */
+    filter: contrast(7%);
+    color: var(--color-principal);
+    border-radius: 10px;
+}
+.nav-actions{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+.nav-actions svg:hover{
+    filter: brightness(73%);
+}
+#search-button{
+    background-color: #523235;
+}
+/* ESTILOS BUSCADOR */
+.buscador-desplegable{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--color-principal);
+    min-height: 30%;
+    z-index: 110;
+
+}
+#buscador input{
+    margin: auto;
+    width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    height: 20px;
+    font-size: 20px;
+    margin: 20px;
+    border: none;
+}
+#buscador input:focus, #buscador input:focus-visible{
+    border: none;
+    border-inline: none;
+}
+.buscador-desplegable #cerrar-ventana{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+}
+#elementos{
+    display: flex;
+    gap: 20px;
+    overflow-X: scroll;
+    color: var(--color-fondo);
+    text-align: center;
+}
+#elementos a{
+    width: 25%;
+    margin: 20px;
+    display:block;
+}
+#elementos a img{
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+ #elementos a img:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 30px 0 var(--color-sombra);
+}
+/* ESTILOS DEL FOOTER */
+.main-footer{
+    background-color: var(--color-principal);
+    color: var(--color-fondo);
+    padding-top: 20px;
+    margin-top: 20px;
+}
+.main-footer > p{
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 5%;
+    font-size: smaller;
+
+}
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.footer-column{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-transform: capitalize;
+}
+.footer-column > h3{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.footer-column > a:hover{
+    text-decoration: underline;
+}
+
+/* Ancho de la barra */
+#elementos::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Fondo de la barra */
+#elementos::-webkit-scrollbar-track {
+    background-color: #523235;
+}
+
+/* Parte que se desplaza */
+#elementos::-webkit-scrollbar-thumb {
+    background-color: #523235;
+    border-radius: 10px;
+    /* border: 2px solid #FFF5EB; */
+}
+
+/* Cuando pasas el ratón por encima */
+#elementos::-webkit-scrollbar-thumb:hover {
+    background-color: #80585B;
+}

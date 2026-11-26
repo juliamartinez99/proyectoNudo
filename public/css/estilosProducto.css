@@ -1,0 +1,104 @@
+section.product-details-main , section.sugest-products{
+    width: 80%;
+    margin: 10px auto;
+}
+button{
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+h3, h4, button{
+    letter-spacing: 8px;
+}
+.product-details-main{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 30px;
+}
+.main-img > img, .block-products .article img{
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform-origin: center center;
+    cursor: zoom-in;
+}
+.main-img{
+    overflow-block: hidden;
+}
+.main-img > img:hover{
+    transform: scale(2);
+}
+.main-img .mini-img{
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    gap: 5px;
+}
+.mini-img img, .block-products .article img{
+    width: 100%;
+}
+.main-img img, .block-products .article img{
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.details-aside{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 40px;
+}
+.details-aside > .title-details > h3 {
+    margin: 4px 0;
+}
+.cantidad-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+.cantidad-buttons button{
+    padding: 15px 20px;
+    background-color: var(--color-principal);
+    color: var(--color-fondo)
+}
+.buy-button{
+    width: 100%;
+    margin-top: 5px;
+    padding: 15px;
+    background-color: var(--color-principal);
+    color: var(--color-fondo);
+    border: 1px solid var(--color-principal)
+}
+.buy-button:hover{
+    letter-spacing: 10px;
+    transition: letter-spacing 0.2s ease-in-out;
+}
+.buy-button:active{
+    background-color: var(--color-fondo);
+    border: 1px solid black;
+    color: var(--color-principal)
+}
+.products-details h4{
+    margin: 10px 0;
+}
+.products-details > h4:nth-of-type(2) + ul{
+    list-style-position: inside;
+
+}
+
+/* destacados */
+.sugest-products{
+    text-align: center;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: var(--color-secundario);
+}
+.sugest-products > .block-products{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}

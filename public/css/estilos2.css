@@ -1,0 +1,126 @@
+:root{
+    --color-fondo: #FFF5EB;
+    --color-principal: #523235;
+    --color-texto: hsl(350, 67%, 4%);
+    --fuente-principal: 'Fraunces', serif;
+    --color-sombra1: rgba(82, 50, 53, 0.2);
+    --color-sombra: rgba(0, 0, 0, 0.25);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.filter-galery, main{
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--color-fondo);
+}
+.products-galery img{
+    width: min(250px,100%);
+    /* width: 80%; */
+    height: 350px;
+    border-radius: 20px;
+    /* object-fit: cover; RELLENA ESPACIO DE LA IMAGEN PARA QUE NO SE DEFORME SI TIENE DIFERENTE PROPORCION */
+    object-fit: cover;
+}
+/* estilos para el header princpal que tiene los filtros
+------------------------------------------------------------
+*/
+.filter-galery{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    background-color: white;
+}
+.filter-galery article{
+    justify-self: start;
+}
+.filter-galery h2{
+    justify-self: center;
+    text-transform: uppercase;
+}
+.filter-galery section{
+    justify-self: end;
+}
+/* solo media query para la la parte principal de filtrado */
+@media (max-width: 585px){
+    body{
+        width: 95%;
+    }
+    .filter-galery{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+    }
+    .filter-galery > article{
+        display: none;
+    }
+}
+/* ESTILOS PARA BOTONES HEADER */
+.filter-galery > article > .formats{
+    background-color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer
+}
+.filter-galery select{
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.filter-galery > section > select:first-child{
+    border-right: 2px solid black;
+    margin-right: 5px;
+
+}
+
+
+/* FIN DE ESTILOS HEADER
+--------------------------
+ */
+ /* Estilos para la galeria de productos
+ -----------------------------------------
+ */
+.products-galery{
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit,minmax(min(270px,100%),1fr)); */
+    grid-template-columns: repeat(4,1fr);
+    gap: 50px 10px;
+    justify-items: center;
+}
+.products-galery > article{
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+}
+.products-galery > article > a {
+    color: black;
+    text-decoration: none;
+}
+.products-galery > article > a > img:hover{
+    box-shadow: 2px 2px 30px 0 var(--color-sombra);
+}
+.products-galery > article > button{
+    background-color: white;
+    border: none;
+    display: block;
+    font-size: 30px;
+    margin-left: auto;
+    cursor: pointer;
+}
+.producto{
+    width: 280px;
+}
+/* .products-galery .producto:nth-child(odd){
+    justify-self: end;
+} */
+
+/* FIN ESTILOS GALERIA */

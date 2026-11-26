@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "nombre": "BOLSO CLASIC",
+    "precio": 45.00,
+    "imagen": "img/productos/producto1.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "BOLSO CACAO",
+    "precio": 45.00,
+    "imagen": "img/productos/producto2.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "BOLSO BAMBÚ",
+    "precio": 45.00,
+    "imagen": "img/productos/producto3.jpg"
+  },
+  {
+    "id": 4,
+    "nombre": "BOLSO LUNA",
+    "precio": 45.00,
+    "imagen": "img/productos/producto4.jpg"
+  },
+  {
+    "id": 5,
+    "nombre": "BOLSO ARENA",
+    "precio": 45.00,
+    "imagen": "img/productos/producto5.jpg"
+  },
+  {
+    "id": 6,
+    "nombre": "BOLSO ROSA MALLA",
+    "precio": 45.00,
+    "imagen": "img/productos/producto6.jpg"
+  },
+  {
+    "id": 7,
+    "nombre": "BOLSO BRISA",
+    "precio": 45.00,
+    "imagen": "img/productos/producto7.jpg"
+  },
+  {
+    "id": 8,
+    "nombre": "BOLSO NOCHE",
+    "precio": 45.00,
+    "imagen": "img/productos/producto8.jpg"
+  },
+  {
+    "id": 9,
+    "nombre": "BOLSO FLECOS BOHO",
+    "precio": 45.00,
+    "imagen": "img/productos/producto9.jpg"
+  },
+  {
+    "id": 10,
+    "nombre": "BOLSO GEOMETRÍA",
+    "precio": 45.00,
+    "imagen": "img/productos/producto10.jpg"
+  },
+  {
+    "id": 11,
+    "nombre": "BOLSO PLATA",
+    "precio": 45.00,
+    "imagen": "img/productos/producto11.jpg"
+  },
+  {
+    "id": 12,
+    "nombre": "BOLSO NUDO OSCURO",
+    "precio": 45.00,
+    "imagen": "img/productos/producto12.jpg"
+  },
+  {
+    "id": 13,
+    "nombre": "BOLSO PERLA",
+    "precio": 45.00,
+    "imagen": "img/productos/producto13.jpg"
+  },
+  {
+    "id": 14,
+    "nombre": "BOLSO BLUSH",
+    "precio": 45.00,
+    "imagen": "img/productos/producto14.jpg"
+  },
+  {
+    "id": 15,
+    "nombre": "BOLSO TOTE TIERRA",
+    "precio": 45.00,
+    "imagen": "img/productos/producto15.jpg"
+  },
+  {
+    "id": 16,
+    "nombre": "BOLSO GEOMETRÍA",
+    "precio": 45.00,
+    "imagen": "img/productos/producto16.jpg"
+  }
+]

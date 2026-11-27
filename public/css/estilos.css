@@ -76,6 +76,15 @@ h3{
 #search-button{
     background-color: #523235;
 }
+.menu-sandwidch{
+    display: none;
+    background-color: var(--color-principal);
+    color: var(--)
+}
+.menu-sandwidch svg{
+    /* width: 50px; */
+    font-size: 35px;
+}
 /* ESTILOS BUSCADOR */
 .buscador-desplegable{
     display: none;
@@ -184,4 +193,34 @@ h3{
 /* Cuando pasas el ratón por encima */
 #elementos::-webkit-scrollbar-thumb:hover {
     background-color: #80585B;
+}
+@media screen and (max-width: 920px){
+
+    body{
+        width: 100%;
+    }
+    .main-navigation{
+        /* margin: 0; */
+        top: 0;
+        right: 0;
+        left: 0;
+        padding-top: 10px;
+        width: 100%;
+        border-radius: 0;
+        align-items: start;
+    }
+    .main-navigation .nav-menu a:not(:nth-child(4)){
+        display:none;
+    }
+    .menu-sandwidch{
+        display: block;
+    }
+    .nav-menu{
+        flex-direction: column;
+        align-items: start;
+    }
+    .nav-menu .logo{
+        align-self: center;
+        order: -1;
+    }
 }

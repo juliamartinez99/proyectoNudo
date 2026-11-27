@@ -11,14 +11,17 @@
     <link rel="stylesheet" href="/css/estilosProducto.css">
     <script src="https://kit.fontawesome.com/05fd8cfb59.js" crossorigin="anonymous"></script>
     <script type="module" src="script/buscador.js" defer></script>
+    <script type="module" src="script/menu.js" defer></script>
+
    </head>
    <body>
     <div class="main-navigation">
+        <button class='menu-sandwidch' id="menu"><i class="fa-solid fa-bars" style="color: #FFF5EB;"></i></button>
         <nav class="nav-menu">
             <a href="productos.php">bolsos</a>
             <a href="productos.php">accesorios</a>
             <a href="#">colecciones</a>
-            <a href="index.php"><img src="img/logoPequeño.svg" alt="logoWeb" width="60px"/></a>
+            <a href="index.php" class="logo"><img src="img/logoPequeño.svg" alt="logoWeb" width="60px"/></a>
             <a href="#">sobre nosotros</a>
             <a href="contacto.php">contacto</a>
         </nav>
